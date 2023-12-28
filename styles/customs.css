@@ -1,0 +1,72 @@
+.link {
+  @apply hover:text-cyan duration-primary transition-all;
+}
+
+.button {
+  @apply rounded-full border-[1px] text-cyan border-cyan shadow-[0px_0px_10px_0px_rgba(0,212,163,0.2)] hover:shadow-[0px_0px_15px_0px_rgba(0,212,163,0.3)] transition-all duration-primary;
+}
+
+.brand-background {
+  @apply bg-gradient-to-r from-[#1C1C1C] via-[#0C173E] to-[#1C1C1C];
+}
+
+.brand-text-gradient {
+  background: linear-gradient(89deg, #fe31c1 7.16%, #fe9926 79.03%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-content-gradient {
+  @apply [&>p>strong]:bg-brand [&>p>strong]:bg-clip-text [&>p>strong]:text-fill-transparent;
+}
+
+.custom-card {
+  background: rgba(27, 38, 73);
+}
+
+.custom-card:hover {
+  opacity: 1;
+  background: radial-gradient(
+    71.83% 74.11% at 9.41% 37.99%,
+    #323f6e 0%,
+    rgba(27, 38, 73, 0.4) 100%
+  );
+  -webkit-transition: background 500ms;
+  -ms-transition: background 500ms;
+  transition: background 500ms;
+}
+
+.section-banner:hover {
+  background: rgb(166, 175, 177);
+  background: linear-gradient(
+    90deg,
+    rgba(166, 175, 177, 1) 0%,
+    rgba(12, 23, 62, 0.8407738095238095) 23%,
+    rgba(12, 23, 62, 0.87718837535014) 32%,
+    rgba(166, 175, 177, 1) 100%
+  );
+}
+
+.brand-content-gradient-v2 {
+  @apply [&]:bg-brand [&]:bg-clip-text [&]:text-fill-transparent;
+}
+/* .brand-line-style {
+  background: linear-gradient(270deg, #d9d9d9 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.brand-line-style-cyan {
+  background: linear-gradient(270deg, #00D4A3 0%, rgba(217, 217, 217, 0) 100%);
+} */
+
+.feature a {
+  color: #fe9926;
+}
+
+.feature span {
+  @apply brand-text-gradient;
+}
+
+.active-first-child {
+  top: calc(50% - 1px);
+}
